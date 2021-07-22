@@ -28,6 +28,34 @@
      border: none;
  }
 
+ .setup{
+     width: 100%;
+ }
+
+ #intro{
+     background-image: url(https://i.insider.com/55775c1e6bb3f76056e55ae8?width=750&format=jpeg&auto=webp);
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+     font-weight: 300;
+     font-size: 14px;
+     font-family: sans-serif;
+ }
+
+ .text{
+     font-family: sans-serif;
+     color: white;
+     font-weight: normal;
+     letter-spacing: 1px;
+     /* width: xxpx; change this value by experimenting 
+     min-width: experiment with this value; */
+ }
+
+ .firstText{
+     /*margin: play with this value*/
+     text-align: center;
+ }
+/* 
 div:nth-child(1){
     background-image: url(https://i.insider.com/55775c1e6bb3f76056e55ae8?width=750&format=jpeg&auto=webp);
     background-size: cover;
@@ -47,4 +75,5 @@ div:nth-child(3){
 
 div:nth-child(4){
     background: green;
-}
+} */
+
