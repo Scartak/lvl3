@@ -286,3 +286,20 @@ body{
    box-sizing: border-box;
 }
 
+#img7{
+   width:600px;
+   height: auto;
+   /* flex-grow: 1; */
+   margin: 30px;
+   min-width: 150px;
+   object-fit: cover;
+}
+
+#img8{
+   width:400px;
+   height: auto;
+   /* flex-grow: 1; */
+   margin: 30px;
+   min-width: 150px;
+   object-fit: cover;
+}
