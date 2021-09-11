@@ -7,7 +7,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 25px;
+  padding: 20px 30px;
   text-decoration: none;
   transition: color 0.2s linear; /*makes the delay between the before and after state to .2 s */
 }
@@ -16,8 +16,10 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 90px 20px 20px; /*adds spacing around the logo*/
+  padding: 20px 90px; /*adds spacing around the logo*/
   text-decoration: none; /*removes the blue underline from the logo*/
+  /* border: 2px solid red; */
+
 }
 
 .nav:hover {
@@ -43,7 +45,6 @@ ul li {
     float: none; /*when screen size is less than 600px the ul li loses its float making the navbar responsive*/
   }
 }
-=======
 
 #intro{
     width: 100%;
@@ -61,6 +62,8 @@ ul li {
 }
 
 #firstText{
+   padding: 40px;
+   border-radius: 5px;
     text-align: center;
     margin: auto;
     margin-top: 150px;
@@ -71,6 +74,8 @@ ul li {
     font-family: sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238, 0.6);
 }
 
 
@@ -126,13 +131,13 @@ ul li {
 .base{
    font-family: sans-serif;
    font-weight: normal;
+   background-color: white;
 }
 
-.flexRight{ /* might need to add separate div ids */
+.flexRight{ 
    display: flex;
-   /* border: 2px solid red; */
    height: auto;
-   flex-wrap: wrap;
+   flex-wrap: wrap; /* moves content to next line if space is limited */
    justify-content: space-around;
    line-height: 1.6;
 }
@@ -143,20 +148,16 @@ ul li {
 
 #f1{
   /* max-width: 400px; */
-  width: 50%;
+  width: 50%; /*sets the width to be always 50% */
   padding: 40px 30px 60px 40px ;
-  /* border: 2px solid red; */
   line-height: 1.6;
-  /* flex-grow: 1; */
-
 }
 
 #f2{
-   min-width: 400px;
+   min-width: 400px; /* the div moves down when the min-width value is reached */
    max-width: 550px;
    width: 40%;
-   /* border: 2px solid green; */
-   flex-grow: 1;
+   flex-grow: 1; /* the content box grows to the max-width value instead of the min-width when moved to new line */
 }
 
 
@@ -184,11 +185,10 @@ ul li {
    line-height: 1.6;
 }
 
-.flexLeft{ /* might need to add separate div ids */
+.flexLeft{ 
    display: flex;
-   /* border: 2px solid red; */
    height: auto;
-   flex-wrap: wrap-reverse;
+   flex-wrap: wrap-reverse; /* reverses the direction of the wrap so the text is put before the image */
    justify-content: space-around;
    margin-top: 10px;
    line-height: 1.6;
@@ -345,5 +345,31 @@ ul li {
    margin: 30px;
    min-width: 150px;
    object-fit: cover;
+}
+
+.btmNav{
+   max-width: 1300px;
+   background-color: black;
+   margin: 40px;
+   padding: 30px 0;
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   height: auto;
+}
+
+.simpleNav{
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   font-weight: bold;
+   width: 150px;
+   border-radius: 3px;
+   background-color: white;
+   color: black;
+   margin-top: 10px;
+   text-decoration: none;
+   /* padding: 30px; */
 }
 
