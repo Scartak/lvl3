@@ -1,6 +1,49 @@
-body{
-    margin: 0;
+
+body {
+  margin: 0;
 }
+
+.nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  transition: color 0.2s linear; /*makes the delay between the before and after state to .2 s */
+}
+
+.logo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 90px 20px 20px; /*adds spacing around the logo*/
+  text-decoration: none; /*removes the blue underline from the logo*/
+}
+
+.nav:hover {
+  color: red; /*upon hovering the mouse the colour changes to red*/
+}
+
+ul {
+  font-family: arial;
+  list-style-type: none; /*removes the list decoration*/
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  background-color: #333;
+  overflow: hidden; /*if the list goes over the navbar, it is hidden and not shown to the user*/
+}
+
+ul li {
+  float: left; /*makes the object float towards the left side of the screen */
+}
+
+@media screen and (max-width: 600px) {
+  ul li {
+    float: none; /*when screen size is less than 600px the ul li loses its float making the navbar responsive*/
+  }
+}
+=======
 
 #intro{
     width: 100%;
@@ -303,3 +346,4 @@ body{
    min-width: 150px;
    object-fit: cover;
 }
+
