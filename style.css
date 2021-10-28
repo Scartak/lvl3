@@ -3,55 +3,119 @@ body {
   margin: 0;
 }
 
-.nav {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-  transition: color 0.2s linear; /*makes the delay between the before and after state to .2 s */
+*{
+   text-decoration: none;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+nav{
+
+   height: 80px;
+   width: 100%;
+   background: #34495e;
+   z-index: 1;
 }
 
-.logo {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 90px; /*adds spacing around the logo*/
-  text-decoration: none; /*removes the blue underline from the logo*/
-  /* border: 2px solid red; */
-
+label.logo{
+   font-size: 35px;
+   font-weight: bold;
+   color: white;
+   padding: 0 100px;
+   line-height: 80px;
 }
 
-.nav:hover {
-  color: red; /*upon hovering the mouse the colour changes to red*/
+nav ul{
+   float: right;
+   margin-right:  40px;
 }
 
-ul {
-  font-family: arial;
-  list-style-type: none; /*removes the list decoration*/
-  margin: 0;
-  padding: 0;
-  position: sticky;
-  background-color: #333;
-  overflow: hidden; /*if the list goes over the navbar, it is hidden and not shown to the user*/
+nav li{
+   display: inline-block;
+   margin: 0 8px;
+   line-height: 80px;
 }
 
-ul li {
-  float: left; /*makes the object float towards the left side of the screen */
+nav a{
+   color: white;
+   font-size: 18px;
+   text-transform: uppercase;
+   border: 1px solid transparent;
+   padding: 7px 10px;
+   border-radius: 3px;
 }
 
-@media screen and (max-width: 600px) {
-  ul li {
-    float: none; /*when screen size is less than 600px the ul li loses its float making the navbar responsive*/
+a.active, a:hover{
+   border: 1px solid white;
+   transition: .5s;
+}
+
+nav #icon{
+   color: white;
+   font-size: 40px;
+   line-height: 80px;
+   float: right;
+   margin-right: 40px;
+   cursor: pointer;
+   margin-top: 20px;
+   display: none; 
+}
+
+@media (max-width: 909px){
+   label.logo{
+       font-size: 32px;
+       padding-left: 60px;
+   }
+   nav ul{
+       margin-right: 20px;
+   }
+   nav a{
+       font-size:  17px;
+   }
+}
+
+@media (max-width: 1100px){
+   nav #icon{
+       display: block;
+   }   
+   nav ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2f3640;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+
+   }
+   nav li{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+   }
+   nav a{
+       font-size: 20px;
+   }
+   a.active, a:hover{
+       border:  none;
+       color: #3498db;
+   }
+   nav ul.show{
+       left: 0;
   }
 }
 
+
+
 #intro{
+   z-index: -1;
     width: 100%;
 
     font-family: sans-serif;
     height: 100vh;
-    background-image: url(https://i.insider.com/55775c1e6bb3f76056e55ae8?width=750&format=jpeg&auto=webp);
+    background: url(https://i.insider.com/55775c1e6bb3f76056e55ae8?width=750&format=jpeg&auto=webp);
     background-size: cover;
     background-attachment: fixed;
     position: relative;

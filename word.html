@@ -2,17 +2,29 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta content="width=device-width, initial-scale=1.0">
+  <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#icon').click(function(){
+              $('ul').toggleClass('show')
+          });
+      });
+  </script>
 </head>
 <body> 
-   <nav>  
-    <ul>
-      <li><a class="logo" href="#">BetterWorld</a></li>
-      <li><a class="nav" href="#pandemics"> Pandemics </a></li>
-      <li><a class="nav" href="#cosmic"> Cosmic Events</a></li>
-      <li><a class="nav" href="#climate">Climate Change</a></li>
-      <li><a class="nav" href="#warfare">Warfare</a></li>
+   <nav> 
+    <label class = "logo">BetterWorld</label>
+    <ul> 
+        <li><a href="#pandemics"> Pandemics </a></li>
+        <li><a href="#cosmic"> Cosmic Events</a></li>
+        <li><a href="#climate">Climate Change</a></li>
+        <li><a href="#warfare">Warfare</a></li>
     </ul>
+    <label id = "icon">
+        <i class = "fa fa-bars"></i>
+    </label> 
   </nav>
   <div id="intro">
     <h1 id="firstText">Global catastrophes have occurred many times in history, even if we only count disasters
@@ -57,7 +69,7 @@
         of the population which it affected.
       </div>
       <div id="f2">
-        <img src="  /covidCases.png" id="img1" alt = "A chart showing a daily increase in COVID-19 worldwide">
+        <img src="images/covidCases.png" id="img1" alt = "A chart showing a daily increase in COVID-19 worldwide">
       </div>
     </div>
     <div class="flexLeft">
