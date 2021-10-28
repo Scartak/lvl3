@@ -54,12 +54,11 @@ a.active, a:hover{
 
 nav #icon{
    color: white;
-   font-size: 40px;
+   font-size: 40px;  
    line-height: 80px;
    float: right;
    margin-right: 40px;
    cursor: pointer;
-   margin-top: 20px;
    display: none; 
 }
 
