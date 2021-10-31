@@ -264,6 +264,7 @@ nav #icon{
    max-width: 100%;
    padding: 30px;
    flex-direction: row;
+   box-sizing: border-box;
    /* flex-wrap: wrap; */
 }
 
@@ -279,7 +280,7 @@ nav #icon{
 }
 
 @media screen and (max-width: 800px) {
-   #flex3{
+   .flex3{
       flex-direction: column;
    }
    
